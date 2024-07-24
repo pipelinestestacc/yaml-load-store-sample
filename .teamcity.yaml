@@ -1,4 +1,4 @@
-name: TCP - Pipeline YAML Load - from subfolder
+name: TCP - Pipeline YAML Load
 jobs:
   Job1:
     name: Job A
