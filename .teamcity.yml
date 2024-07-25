@@ -5,20 +5,23 @@ jobs:
     steps:
       - type: script
         script-content: echo "test Job A" >> test-a.txt
+        name: Job A - Stash Test File
     runs-on: Linux-Small
     files-publication:
       - '*'
+    allow-reuse: false
   JobB:
     name: Job B
     runs-on: Linux-Small
     steps:
       - type: script
         script-content: echo "Test B" >> test-b.txt
+        name: Job B - Stash Test File
     files-publication:
-      - '*'
+      - '*.txt'
   JobC:
     name: Job C
-    runs-on: Linux-Small
+    runs-on: Ubuntu-20.04-Small
     steps:
       - type: script
         script-content: |-
@@ -31,4 +34,4 @@ jobs:
             - '*'
       - JobB:
           files:
-            - '*'
+            - '*.txt'
