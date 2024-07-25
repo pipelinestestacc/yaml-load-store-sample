@@ -1,3 +1,3 @@
-# YAML Load-Store Sample
+# YAML Load Sample
 
-A sample repository with a simple YAML file, which describes a Pipeline.
+This repository contains a simple pipeline used for Pipeline Load feature purposes. Please note that **synchronization with this repository should be disabled** in order to prevent an unwanted modification of a Pipeline references within the test.
