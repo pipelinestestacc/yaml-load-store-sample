@@ -1,4 +1,4 @@
-name: TCP - Pipeline YAML Load
+name: TCP - Pipeline YAML Store
 jobs:
   Job1:
     name: Job A
