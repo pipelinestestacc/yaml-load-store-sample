@@ -31,4 +31,3 @@ jobs:
       - JobB:
           files:
             - '*.txt'
-importParameters: []
